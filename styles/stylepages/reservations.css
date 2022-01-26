@@ -1,0 +1,69 @@
+@import url(../utilities/utilities.css);
+@import url(../utilities/navbar-footer.css);
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+}
+#top {
+    height: 14.5vh;
+}
+.reservation-content {
+    width: 100%;
+    height: 75.5vh;
+    display: inline-flex;
+}
+.reservation-content img {
+    opacity: .4;
+    height: 95%;
+    position: relative;
+    z-index: -1;
+
+}
+.reservation-content h1 {
+    font-weight: 700;
+    font-size: 8rem;
+    position: absolute;
+    left: 5%;
+    top: 33%;
+    opacity: .4;
+    /* z-index: 2; */
+}
+.form-item {
+    width: 70%;
+    /* background-color: gray; */
+    position: relative;
+    left: 20%;
+}
+.form-item form{
+    position: relative;
+    left: 13%;
+    top: 20%;
+    width: 60%;
+    height: 50%;
+    padding: 4.5% 0% 0% 9%;
+    /* background-color: gray; */
+}
+.form-item form input {
+    margin: 1rem 1rem 1rem 0;
+}
+.form-item form label {
+    color: var(--main-text-color);
+}
+#send-btn {
+    width: 40%;
+    height: 10%;
+    background-color: var(--main-gold);
+    border: none;
+    border-radius: .3rem;
+    color: #fff;
+    transition: .2s linear;
+    position: relative;
+    left: 20%;
+}
+#send-btn:hover {
+    cursor: pointer;
+    color: var(--main-text-color);
+    background-color: var(--light-brown);
+}
+

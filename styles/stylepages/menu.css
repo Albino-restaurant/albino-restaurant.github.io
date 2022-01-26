@@ -1,0 +1,66 @@
+@import url(../utilities/utilities.css);
+@import url(../utilities/navbar-footer.css);
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+}
+#top {
+    height: 14.5vh;
+}
+.menu-content {
+    width: 100%;
+    height: 75.5vh;
+    display: inline-flex;
+}
+.menu-content img {
+    opacity: .4;
+    height: 95%;
+    
+}
+.menu-content .left-items, .right-items {
+    width: 50%;
+    height: 100%;
+    padding: 3% 0;
+    text-align: center;
+
+}
+.menu-content h1 {
+    font-weight: 700;
+    font-size: 8rem;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    opacity: .4;
+}
+.right-items ol, .left-items ol {
+    position: relative;
+    top: 0%;
+}
+.left-items ol {
+    left: 55%;
+}
+.left-items ol ul li, .right-items ol ul li {
+    font-weight: 400;
+    margin: 2px 0;
+}
+.item-title {
+    font-weight: 700;
+    text-decoration: underline;
+    margin: 1.5rem 0 .5rem 0;
+    font-size: 1.5rem;
+}
+.gold-items {
+    position: absolute;
+    bottom: 6%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+}
+.gold-item-title {
+    font-weight: 700;
+    text-decoration: underline;
+    margin: 0 0 .5rem 0;
+    font-size: 1.5rem;
+    color: var(--main-gold);
+}

@@ -1,0 +1,229 @@
+@import url(./utilities.css);
+/* NAVBAR STYLES */
+/* top and btn navbar styles */
+#top {
+    width: 100%;
+    height: 100vh;
+}
+.top-navbar, .bottom-navbar {
+    width: 100%;
+    padding: 25px 7%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-navbar {
+    position: absolute;
+    z-index: 994;
+}
+.bottom-navbar {
+    background-color: #fff;
+    z-index: 993;
+    position: fixed;
+}
+.nav-item {
+    width: 33%;
+}
+
+/* left-navbar */
+.fp-items-container{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: var(--main-white);
+    clip-path: circle(0px at 7% 45px); /* 25px circle at left top */
+    transition: all 0.3s linear;
+    z-index: 995;
+}
+/* check if input#checkbox is checked 
+    if active: 
+    show circle 100%
+*/
+#checkbox:checked ~ .fp-items-container{
+  clip-path: circle(100%);
+}
+/* menu btn styles */
+.menu-btn{
+    height: 45px;
+    width: 45px;
+    position: fixed;
+    top: 2.5%;
+    left: 7%;
+    padding: 0px;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 996;
+    background: var(--main-white);
+    transition: all 0.3s ease-in;
+}
+#checkbox:checked ~ .menu-btn{
+  background: var(--main-brown);
+}
+#checkbox{
+  display: none;
+}
+.fp-items-container ul {
+    position: relative;
+    top: 35%;
+    text-align: center;
+}
+.fp-items-container ul li a {
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 5px 20px;
+    display: block;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    transition: 0.5s;
+}
+/* item hovers */
+.fp-items-container ul:hover li a {
+    color: #0002;
+}
+.fp-items-container ul li:hover a {
+    color: #000;
+}
+.fp-items-container ul li a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 500px;
+    transition: letter-spacing 0.5s, left 0.5s;
+}
+.fp-items-container ul li a:hover::before {
+    content: attr(text);
+    opacity: 1;
+    left: 50%;
+    letter-spacing: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+/* meny hamburguer */
+.ham {
+    cursor: pointer;
+    transition: transform 400ms;
+    width: 2.75rem;
+  }
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+.line {
+    fill:none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke:#fff;
+    stroke-width:5.5;
+    stroke-linecap:round;
+}
+.ham7 .top {
+    stroke-dasharray: 40 82;
+}
+.ham7 .middle {
+    stroke-dasharray: 40 111;
+}
+.ham7 .bottom {
+    stroke-dasharray: 40 161;
+}
+.ham7.active .top {
+    stroke-dasharray: 17 82;
+    stroke-dashoffset: -62px;
+}
+.ham7.active .middle {
+    stroke-dashoffset: 23px;
+}
+.ham7.active .bottom {
+    stroke-dashoffset: -83px;
+}
+
+/* middle navbar */
+.logo {
+    width: 12%;
+}
+
+/* right-navbar */
+.right-nav {
+    text-align: right;
+}
+.top-navbar .right-nav a {
+    color: #fff;
+    font-weight: 700;
+}
+.bottom-navbar .right-nav a {
+    color: #000;
+    font-weight: 700;
+}
+
+
+/*  */
+/*  */
+/*  */
+/* FOOTER */
+.back-to-top {
+    position: relative;
+    left: 97%;
+    bottom: 2%;
+    background-color: #E8E8E4;
+}
+.back-to-top img {
+    width: 35px;
+    height: 35px;
+    /* background-color: #E8E8E4; */
+    padding: 5px;
+    transition: .2s;
+}
+.back-to-top img:hover {
+    padding: 4.7px;
+    filter: invert(14%) sepia(20%) saturate(1325%) hue-rotate(5deg) brightness(105%) contrast(89%);
+}
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    padding: 0px 7%;
+}
+footer .social-media-items {
+    width: 50%;
+    height: 90%;
+}
+.social-media-items a {
+    position: relative;
+    top: 35%;
+}
+.social-media-items a img {
+    width: 20px;
+    margin: .3rem;
+}
+.social-media-items a img:hover, .other-pages-items a:hover {
+    transition: .2s;
+    filter: invert(14%) sepia(20%) saturate(1325%) hue-rotate(5deg) brightness(105%) contrast(89%);
+}
+footer .other-pages-items {
+    width: 50%;
+    height: 90%;
+    text-align: right;
+}
+.other-pages-items a {
+    position: relative;
+    top: 35%;
+    color: #000;
+}

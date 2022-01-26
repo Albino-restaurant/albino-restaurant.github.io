@@ -1,0 +1,60 @@
+/* Fonts */
+@font-face {
+    font-family: century-regular;
+    src: url(../fonts/Century\ Normal.ttf);
+}
+@font-face {
+    font-family: century-italic;
+    src: url(../fonts/Century\ Italic.ttf);
+}
+@font-face {
+    font-family: century-bold;
+    src: url(../fonts/Century\ Bold.ttf);
+}
+
+/* Variables */
+:root {
+    --main-text-color:#333;
+    --main-gold: #997737;
+    --main-white: #F4F3EF;
+    --main-brown: #3A3017;
+    --light-brown: #E0DBC8;
+    /* --box-shadow: ; */
+}
+
+/* Default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1rem;
+    font-family: century-regular;
+    scroll-behavior: smooth;
+    color: var(--main-text-color);
+}
+body {
+    overflow-x: hidden;
+    background-color: var(--main-white);
+}
+
+/* Scrollbar style */
+body::-webkit-scrollbar {
+    width: .5rem;
+    background-color: var(--main-white);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-brown);
+    border-radius: .3rem;
+}
+
+
+/* Transitions */
+/* https://cubic-bezier.com/ */
+
+/* Selectors */
+/* https://www.w3.org/TR/selectors/ */
+
+/* filters */
+/* https://codepen.io/sosuke/pen/Pjoqqp */

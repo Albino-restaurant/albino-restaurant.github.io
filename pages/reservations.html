@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="../styles/stylepages/reservations.css">
+    <link rel="icon" type="image/x-icon" href="../img/brand/favicon.ico">
+</head>
+<body>
+    <div class="main-container">
+        <section id="top">
+            <header>
+                <!-- BOTTOM NAVBAR -->
+                <div class="bottom-navbar">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="menu-btn"><svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                        <path
+                            class="line top"
+                            d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+                        <path
+                            class="line middle"
+                            d="m 70,50 h -40" />
+                        <path
+                            class="line bottom"
+                            d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+                    </svg>
+                    </label>
+                    <div class="fp-items-container">
+                    <ul>
+                        <li><a href="./home.html" text="Home">Home</a></li>
+                        <li><a href="./menu.html" text="Menu">Menu</a></li>
+                        <li><a href="./special-dishes.html" text="Special Dishes">Special Dishes</a></li>
+                        <li><a href="./chef-school.html" text="Chef School">Chef School</a></li>
+                        <li><a href="#" text="Reservations">Reservations</a></li>
+                    </ul>
+                    </div>
+                    <span class="nav-item left-nav">
+                    </span>
+
+                    <img class="logo" src="../img/brand/albino-logo-b.png" alt="albino-logo-b">
+
+                    <span class="nav-item right-nav">
+                        <a href="./home.html">Home</a>
+                    </span>
+                </div>
+            </header>
+            
+        </section>
+        <section class="reservation-section">
+            <div class="reservation-content">
+                <h1>Reserva <br> tions</h1>
+                <div class="form-item">
+                    <form action="./recibed.html">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" maxlength="20" required>
+                        <label for="surname">Surname: </label>
+                        <input type="text" name="surname" id="surname" maxlength="20" required>
+                        <br>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" maxlength="25" required>
+                        <label for="tlf">Tlf: </label>
+                        <input type="tel" name="tlf" maxlength="10" required>
+                        <br>
+                        <label for="date">Date: </label>
+                        <input type="date" name="hour" required>
+                        <label for="hour">Hour: </label>
+                        <input type="time" name="hour" min="19:00" max="23:00" required>
+                        <br>
+                        <label for="people">People: </label>
+                        <input type="number" name="people" min="1" max="8">
+                        <br>
+                        <input type="submit" value="Send" id="send-btn">
+                    </form>
+                </div>
+                <img src="../img/brand/monkey-c.png" alt="">
+            </div>
+        </section>
+        
+        <!-- FOOTER -->
+        <footer>
+            
+            <div class="social-media-items">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100077377999362"><img src="../img/social-media/facebook.svg" alt="facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/albinorestaurant/"><img src="../img/social-media/instagram.svg" alt="instagram"></a>
+                <a target="_blank" href="https://twitter.com/albinorestaura1"><img src="../img/social-media/twitter.svg" alt="twitter"></a>
+            </div>
+            <div class="other-pages-items">
+                <a href="./wip.html">Join as a chef</a>
+            </div>
+            
+        </footer>  
+    </div>
+</body>
+</html>

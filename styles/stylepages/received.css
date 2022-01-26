@@ -1,0 +1,49 @@
+@import url(../utilities/utilities.css);
+@import url(../utilities/navbar-footer.css);
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+}
+#top {
+    height: 14.5vh;
+}
+.received-content {
+    width: 100%;
+    height: 75.5vh;
+    display: inline-flex;
+}
+.received-content img {
+    opacity: .4;
+    height: 95%;
+    position: relative;
+    left: 35%;
+    z-index: -1;
+
+}
+.received-content h1 {
+    font-weight: 700;
+    font-size: 8rem;
+    position: absolute;
+    left: 37%;
+    top: 44%;
+}
+#back-home {
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--main-gold);
+    border: none;
+    border-radius: .3rem;
+    color: #fff;
+    transition: .2s linear;
+    position: absolute;
+    left: 47%;
+    top: 60%;
+}
+#back-home:hover {
+    cursor: pointer;
+    color: var(--main-text-color);
+    background-color: var(--light-brown);
+}
